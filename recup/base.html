@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+	<title>Online-Cv - {% block title %}{% endblock %}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ MEDIA_URL }}css/style.css" />
+</head>
+
+<body>
+
+<div id="main">
+    <div id="site">
+        <div id="top">
+            <ul id="navigation">
+                <li><a href="Index.html" title="Accueil">Accueil</a></li>
+                <li><a href="/cv/" title="About">CV(s)</a></li>
+                <li><a href="/Contact/" title="Contact">Contact</a></li>
+            </ul>
+            <!-- DEBUT : LOGIN -->
+            <!-- Supprimer cet élément si vous ne souhaitez plus avoir le bloc login (haut-droite) : -->
+            <!-- Fin : LOGIN -->
+        </div>
+        <div id="header">
+            <h1><a href="#" title=""><span class="invisible">Online-Cv/span></a></h1>
+        </div>
+        <!-- DEBUT : LOGO RSS -->
+        <!-- Supprimer cet élément si vous ne souhaitez plus avoir le logo RSS -->
+        <div id="rss">
+            <a href="#" class="rss" title=""><span class="invisible">RSS</span></a>
+        </div>
+        <!-- FIN : LOGO RSS -->
+        <div id="container">
+            <div id="content">
+				{% block detail %}
+				{% endblock %}
+
+            </div>
+            <div id="sidebar">
+            	<div align="center"><img src="./static/images/adsense-250x250.gif" alt="" /></div>
+                <div class="puce-1">
+                	<h3>Navigation</h3>
+                	<ul>
+						{% block sidebar %}{% endblock %}
+                    	<li><a href="http://www.graphiques-kits.com" title="">Nos kits graphiques</a></li>
+                        <li><a href="#" title="">Une sélection des kits du web...</a></li>
+                        <li><a href="#" title="">Foire aux questions (F.A.Q)</a></li>
+                        <li><a href="#" title="">Conditions</a></li>
+                        <li><a href="#" title="">Nous contacter</a></li>
+                        <li><a href="#" title="">Graphiques-Kits ?</a></li>
+                        <li><a href="#" title="">Signez le livre d'or !</a></li>
+                        <li><a href="#" title="">Lorem ipsum dolor sit</a></li>
+                    </ul>
+                </div>
+                <div style="margin: 20px 0 20px 5px">
+                	<a href="#" title=""><img src="./static/images/annonce-125x125.gif" alt="" /></a>
+                </div>
+                <div class="puce-2">
+                    <h3>Nos catégories</h3>
+                    <ul>
+                        <li><a href="#" title="">Autres</a></li>
+                        <li><a href="#" title="">Free Stunning Website</a></li>
+                        <li><a href="#" title="">Amazing Website Templates</a></li>
+                        <li><a href="#" title="">Informatique</a></li>
+                        <li><a href="#" title="">Internet</a></li>
+                        <li><a href="#" title="">Graphiques-Kits ?</a></li>
+                        <li><a href="#" title="">Signez le livre d'or !</a></li>
+                        <li><a href="#" title="">Lorem ipsum dolor sit</a></li>
+                        <li><a href="#" title="">CSS layouts and menus</a></li>
+                        <li><a href="#" title="">Free JavaScript codes</a></li>
+                        <li><a href="#" title="">Dolor sit amet</a></li>
+                        <li><a href="#" title="">Nouvelle catégorie</a></li>
+                        <li><a href="#" title="">Par : Graphiques-Kits.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<div id="footer">
+	<div id="footer-inner">
+        <div id="footer-left">
+        	
+            <div id="w3c">
+				<ul>
+                	<li><a href="#" title="Valide CSS">Valide CSS</a></li>
+                    <li><a href="#" title="Valide XHTML">Valide XHTML</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-right">
+            <h2>Copyright</h2>
+            <p>© 2011 Pascal MOUTIA - Tous droits réservés<br /></p>
+            <p>Kit graphiques par <strong><a href="http://www.graphiques-kits.com" title="Kit graphique gratuit">Graphiques-Kits.com</a></strong></p>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,362 @@
+*{ margin: 0; padding: 0; }
+
+p {
+	margin: 15px 0 15px 0;
+	padding: 0 0 0 0;
+	text-align: justify;
+}
+
+a {
+	text-decoration: none;
+	color: #669a26;
+}
+
+a:hover { color: #107cab; }
+
+.invisible {
+	display: block;
+	visibility: hidden;
+}
+
+.clear {
+	margin: 0 auto;
+	font-size: 1px;
+	clear: both;
+}
+
+body {
+	background: #eee url(./images/bg-contenu.jpg) repeat-y center;
+	text-align: center;
+	font: normal 80% "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	color: #515151;
+}
+
+#main {
+	background: url(./images/bg.jpg) no-repeat center top;	
+}
+
+#site {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: left;
+	position: relative;
+}
+
+#top {
+	width: 1000px;
+	height: 30px;
+	font: 11px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#navigation {
+	height: 30px;
+	padding-left: 40px;
+	overflow: hidden;
+}
+
+#navigation li {
+	list-style-type: none;
+	width: 90px;
+	height: 30px;
+	background: url(./images/navigation-separation.jpg) no-repeat right top;
+	padding-right: 2px;
+	text-align: center;
+	float: left;
+}
+
+#navigation li a {
+	width: 90px;
+	height: 24px;
+	display: block;
+	color: #baceda;
+	padding-top: 6px;
+	text-decoration: none;
+}
+
+#navigation li a:hover {
+	color: #fff;
+}
+
+#login {
+	position: absolute;
+	right: 40px;
+	top: 0px;
+	color: #9db2bf;
+	background: url(./images/user.gif) no-repeat right top;
+	padding: 6px 32px 0 0;
+	min-height: 30px;
+}
+
+#login a { color: #9db2bf; }
+#login a:hover { color: #9db2bf; }
+
+#header {
+	width: 1000px;
+	height: 140px;
+}
+
+#header h1 {
+	width: 450px;
+	height: 140px;
+	line-height: 140px;
+	text-indent: -9999px;
+	padding-left: 60px;
+}
+
+#header h1 a {
+	width: 450px;
+	height: 140px;
+	display: block;
+	background: url(./images/logo.png) no-repeat 0 0;
+}
+
+#rss {
+	width: 1000px;
+	height: 75px;
+}
+
+#rss .rss {
+	width: 175px;
+	height: 65px;
+	display: block;
+	background: url(./images/rss.png) no-repeat 0 0;
+	float: right;
+	margin-right: 60px;
+}
+
+/* Container */
+/* --------- */
+
+#container {
+	width: 895px;
+	margin: 15px 0 0 50px;
+}
+
+/* Gauche */
+
+#content {
+	width: 610px;
+	float: left;
+}
+
+#content h3 {
+	margin: 1.4em 0 0.9em 0;
+	font-weight: normal;
+	font-size: 1.2em;
+	color: #000;
+}
+
+.bloc {
+	background: url(./images/bg-bloc.jpg) right bottom no-repeat;
+	padding: 0 40px 20px 0;
+	margin: 0 0 30px 0;
+}
+
+.bloc h2 {
+	margin: 0 0 0em 0;
+	font-weight: bold;
+	font-size: 1.6em;
+	color: #7cae39;
+}
+
+.post-date {
+	color: #5e5e5e;
+	margin: 0 0 1.6em 0;
+}
+
+h2 {
+	margin: 1.6em 0 0.9em 0;
+	font-weight: bold;
+	font-size: 1.6em;
+	color: #7cae39;
+}
+
+.content-p {
+	padding: 0 20px 20px 0;
+	margin: 0 0 30px 0;
+}
+
+.bleu {
+	color: #10729c;
+}
+
+.annonce {
+	float: right;
+	width: 175px;
+	margin: 0;
+	padding: 0 0 10px 20px
+}
+
+.annonce img {
+	border: #d1e1e7 solid 5px;
+}
+
+.code {
+	display: block;
+	width: 490px;
+	background: #f2f5f6 url(./images/bg-code.gif) right top no-repeat;
+	margin-left: 23px;
+	padding: 10px 15px 10px 18px;
+	border-left: #b5de14 solid 6px;
+}
+
+.bottom {
+	display: block;
+	width: 594px;
+	background: #edf3f5 url(./images/bg-bottom.gif) left top no-repeat;
+	padding: 4px 10px 4px 10px;
+	margin-bottom: 30px;
+}
+
+.bottom a {
+	color: #074456;
+}
+
+.bottom a:hover {
+	color: #000;
+}
+
+.comments {
+	background: url(./images/quote.gif) no-repeat 0 4px;
+	padding-left: 24px;
+	float: left;
+	width: 300px;
+}
+
+.sociaux {
+	float: right;
+	width: 250px;
+}
+
+/* Droite */
+
+#sidebar {
+	width: 250px;
+	float: left;
+	padding-left: 20px;
+}
+
+#sidebar a {
+	color: #515151;
+}
+
+#sidebar a:hover {
+	font-weight: bold;
+	color: #7cae39;
+}
+
+#sidebar a img { border: 0 none; }
+
+h3 {
+	margin: 1.4em 0 0.9em 0;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: #10729c;
+}
+
+.puce-1 ul {
+	list-style: url(./images/puce-1.gif);
+	padding: 0px;
+	margin: 0 0 0 30px;
+}
+
+.puce-1 li {
+	margin-bottom: 2px;
+}
+
+.puce-2 ul {
+	list-style: url(./images/puce-2.gif);
+	padding: 0px;
+	margin: 0 0 0 30px;
+}
+
+.puce-2 li {
+	margin-bottom: 2px;
+}
+
+/*  FOOTER  */
+/* ---------*/
+
+#footer {
+	background: #086783 url(./images/bg-footer.jpg) repeat-x;
+	height: 253px;
+	margin-top: 30px;
+}
+
+#footer-inner {
+	margin:0 auto;
+	width: 1000px;
+	height: 221px;
+	padding: 30px 0 0 20px;
+	color: #FFF;
+	text-align: left;
+	background: url(./images/footer.jpg) 0 2px no-repeat;
+}
+
+#footer-inner h2 {
+	margin: 0 0 0.8em 0;
+	font-weight: bold;
+	font-size: 2.0em;
+	color: #b5de14;
+}
+
+#footer-left {
+	float: left;
+	width: 580px;
+	padding-left: 50px;
+	padding-right: 30px;
+}
+
+#footer-left ul {
+	list-style: none;
+	padding: 0px;
+}
+
+#footer-left li {
+	margin-bottom: 2px;
+}
+
+#footer-left a {
+	color: #FFF;
+}
+
+#w3c {
+	margin: 0 0 0 50px;
+}
+
+#w3c ul {
+	padding: 0px;
+}
+
+#w3c ul li {
+	float: left;
+	list-style: url(./images/valide.gif);
+	margin: 25px 80px 0 0;
+}
+
+#w3c li a {
+	color: #17a2e2;
+	font-weight: bold;
+}
+
+#footer-right {
+	float: left;
+	width: 305px;
+}
+
+#footer-right a {
+	color: #FFF;
+}
+
+#footer-right a:hover {
+	font-weight: bold;
+	color: #b5de14;
+}
+
+#twitter {
+	font-weight: bold;
+	background: url(./images/twitter.png) top left no-repeat;
+	min-height: 73px;
+}
+
+#twitter p { padding: 15px 0 0 80px; }

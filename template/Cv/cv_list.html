@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block detail %}
+    <h2>Cv(s)</h2>
+    <ul>
+       	{% for info in object_list %}
+				<li><a href="/cv/{{ info.id }}/">{{ info.prenom }} {{ info.nom }}<a>
+		{% endfor %}
+    </ul>
+{% endblock %}

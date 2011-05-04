@@ -1,0 +1,24 @@
+ipython
+south
+werkzeug
+docutils
+fabric
+feedparser
+Markdown
+textile
+celery
+
+django
+django-celery
+django-debug-toolbar
+django-memcache-status
+django-photologue
+django-sentry
+
+-e git+git://github.com/django-extensions/django-extensions.git#egg=django-extensions
+-e git+git://github.com/thornomad/django-hitcount.git#egg=django-hitcount
+-e git+git://github.com/jtauber/django-mailer.git#egg=django-mailer
+-e git+git://github.com/pydanny/django-uni-form.git#egg=django-uni-form
+-e git+git://github.com/jezdez/django-contact-form.git#egg=contact_form
+-e hg+http://bitbucket.org/izi/django-admin-tools/#egg=django-admin-tools
+-e git+git://github.com/jezdez/django-robots.git#egg=django-robots

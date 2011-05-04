@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block detail %}
+<p><h1>Cv de {{ info.prenom }} {{ info.nom }} 21 ans &nbsp<img src="{{ STATIC_URL }}images/{{ info.id }}.jpg" alt="" /><h1></p>
+	
+	<p><h4>Contact<h4>
+			<ul>
+				<h5>Addresse : {{ info.rue }}</br>{{ info.cpostal }} {{ info.ville }}<h5>
+				<h5>Mail: {{ info.mail }}<h5>
+				<h5>Tel: {{ info.tel }} {{ formation.ecole }} <h5>
+			</ul>
+			
+	</p>
+{% endblock %}
